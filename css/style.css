@@ -330,23 +330,18 @@ a {
     background: #eaa80b;
     height: 1px;
   }
-
   .menu__link:hover:after {
     width: 100%;
   }
-
   .menu__link {
     padding-bottom: 5px;
   }
-
   .menu__link:hover {
     color: #52573d;
   }
-
   .menu__link:active {
     color: #52573d;
   }
-
   .menu__item--active .menu__link {
     border-bottom: 1px solid #eaa80b;
   }
@@ -591,7 +586,6 @@ th {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-
   .block__pic--reverse {
     grid-column: 2/3;
   }
@@ -730,7 +724,6 @@ th {
   .contact {
     margin-bottom: 60px;
   }
-
   .contact__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -847,19 +840,16 @@ label {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
-
   .box__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 40px;
   }
-
   .box__info--reverse {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-
   .box__pic--reverse {
     grid-column: 2/3;
   }
@@ -1068,7 +1058,6 @@ label {
          column-gap: 60px;
     row-gap: 40px;
   }
-
   .newslist__grid {
     grid-column: span 2;
     margin-top: 40px;
