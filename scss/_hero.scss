@@ -1,0 +1,64 @@
+@use 'root';
+
+// ------- Hero --------
+
+.hero {
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    min-height: calc(80vh - 90px);
+    position: relative;
+}
+
+.hero__content {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    margin: 30px;
+    text-align: right;
+
+    @media screen and (max-width: 650px) {
+        width: 325px;
+    }
+}
+
+.hero__title {
+    display: inline-block;
+    font-family: root.$font-special;
+	font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: root.$color-accent;
+    background-color: root.$color-light;
+    margin: 0 0 10px 0;
+    padding: 5px 10px;
+    opacity: 0.8;
+
+    @media screen and (min-width: 960px) {
+        font-size: 2.5rem;
+    }
+}
+
+.hero__title:before,
+.hero__motto:before {
+    display: none;
+}
+
+.hero__motto {
+    display: inline-block;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: root.$color-primary;
+    background-color: root.$color-light;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    opacity: 0.8;
+
+    @media screen and (min-width: 960px) {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,141 @@
+@use 'root';
+
+.divider {
+    width: 100px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 960px) {
+        width: 150px;
+    }
+}
+
+// ------- Infoboxes --------
+
+.infoboxes__grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 40px;
+
+    @media screen and (min-width: 960px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: root.$spacer;
+    }
+}
+
+.infobox {
+    background-color: root.$color-light;
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 20px;
+    cursor: pointer;
+    transition: transform .3s;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.infobox:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+.infobox__img {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.infobox__text {
+    padding: 0 20px 20px 20px;
+    margin-bottom: 0;
+}
+
+.infobox__title {
+    margin-bottom: 0;
+}
+
+// References
+
+.references {
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(173, 173, 173, 0.8), rgba(172, 172, 172, 0.9)), url(/images/daisies4.jpg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    min-height: 50vh;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.references__title {
+    margin-top: 0;
+}
+
+.reference__box {
+    background-color: white;
+    border: 1px solid root.$color-accent;
+    padding: 15px;
+    max-width: 70vh;
+    text-align: center;
+    margin: 0 auto;    
+}
+
+.reference__name {
+    opacity: 0.7;
+}
+
+
+// ------- Gallery --------
+
+.gallery {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.gallery__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    @media screen and (min-width: 960px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.gallery__item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item a:hover {
+    opacity: 0.7;
+}
+
+.gallery__item:nth-child(3n) {
+    grid-column: span 2;
+    grid-row: span 2;
+
+    @media screen and (min-width: 960px) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+.gallery__title {
+    margin-top: 0px;
+}
+
+.gallery__item:nth-child(9) {
+    display: none;
+
+    @media screen and (min-width: 960px) {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .gallery__item:nth-child(4n) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+

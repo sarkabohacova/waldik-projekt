@@ -1,0 +1,142 @@
+@use 'root';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	background-color: whitesmoke;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.header__logo {
+    max-width: auto;
+    padding: 20px 0;
+}
+
+.header__logo-home {
+	width: 150px;
+}
+
+
+// ------- Menu --------
+
+.menu__toggler {
+	cursor: pointer;
+    text-transform: uppercase;
+    color: root.$color-primary;
+    font-size: 1.5rem;
+
+    @media screen and (max-width: 500px) {
+        font-size: 1.2rem;
+    }
+
+	@media screen and (min-width: 1020px) {
+		display: none;
+	}
+}
+
+.menu__checkbox {
+	position: absolute;
+	left: -9999px;
+}
+
+.menu__checkbox:checked ~ .menu__list {
+	display: block;
+    z-index: 2;
+}
+
+.menu__list {
+	display: none;
+	margin: 0;
+	padding: 20px;
+	list-style: none;
+	background-color: whitesmoke;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+	width: 30vh;
+
+	@media screen and (min-width: 1020px) {
+		display: flex !important;
+        background-color: whitesmoke;
+		position: relative;
+		align-items: center;
+		padding: 0;
+		width: auto;
+	}
+}
+
+.menu__item {
+	border-bottom: 1px solid root.$color-primary;
+	padding: 15px;
+
+	@media screen and (min-width: 1020px) {
+		border-bottom: none;
+	}
+}
+
+.menu__link {
+	display: block;
+	text-decoration: none;
+	color: root.$color-primary;
+
+	@media screen and (min-width: 1020px) {
+		position: relative;
+	}
+	
+}
+
+.menu__link,
+.menu__link:after {
+	transition: all .5s;
+}
+
+.menu__link:hover {
+	color: root.$color-accent;
+}
+
+.menu__link:active {
+	color: root.$color-accent;
+}
+
+@media screen and (min-width: 1020px) {
+
+	.menu__link:after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 0%;
+		content: '.';
+		color: transparent;
+		background: root.$color-accent;
+		height: 1px;
+	}
+	  
+	.menu__link:hover:after {
+		width: 100%;
+	}
+
+	.menu__link {
+		  padding-bottom: 5px;
+	}
+
+	.menu__link:hover {
+		color: root.$color-primary;
+	}
+
+	.menu__link:active {
+		color: root.$color-primary;
+	}
+
+	.menu__item--active .menu__link {
+		border-bottom: 1px solid root.$color-accent;
+	}
+
+}

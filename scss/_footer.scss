@@ -1,0 +1,44 @@
+@use 'root';
+
+// ------- Footer --------
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    background-color: root.$color-light;
+    padding: 60px;
+}
+
+.footer__title {
+    color: root.$color-primary;
+}
+
+.footer__street::after,
+.footer__mail::after {
+    content: " • ";
+}
+
+.footer__copy {
+    color: root.$color-lightgrey;
+    margin-top: root.$spacer;
+    font-size: 12px;
+}
+
+.fa-facebook-f,
+.fa-instagram {
+    color: root.$color-primary;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.fa-facebook-f:hover,
+.fa-instagram:hover {
+    opacity: 0.7;
+}
+
+.divider--footer {
+    margin-top: 20px;
+    width: 100px;
+}

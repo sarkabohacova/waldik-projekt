@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/bfbd2c2708.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/CSS/style.css">
+
+    <link rel="stylesheet" href="/CSS/glide.core.css">
+
+    <link rel="stylesheet" href="/CSS/glide.theme.css">
+
+</head>
+<body>
+
+    <header class="header">
+        
+        <a class="header__logo-home" href="/"><img class="header__logo" src="/images/LOGO3.svg" alt="logo Kopretiny"></a>
+        
+        <nav class="menu">
+
+            <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="menu__toggler">☰</label>
+
+            <ul class="menu__list">
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug === '' }}"><a class="menu__link" href="/">Domů</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'aktuality' }}"><a class="menu__link" href="/aktuality/">Aktuality</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kopretina' }}"><a class="menu__link" href="/kopretina/">O Kopretině</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'team' }}"><a class="menu__link" href="/team/">Náš tým</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'registrace' }}"><a class="menu__link" href="/registrace/">Zapiš se k nám</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'faq' }}"><a class="menu__link" href="/faq/">Časté dotazy</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kontakt' }}"><a class="menu__link" href="/kontakt/">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {{ content | safe }}
+
+    <footer class="footer">
+        <a href="www.facebook.com" target="_blank" class="fa-brands fa-facebook-f"></a>
+
+        <a href="www.instagram.com" target="_blank" class="fa-brands fa-instagram"></a><br>
+
+
+        <span class="footer__title"><strong>Lesní mateřská škola Kopretina</strong></span><br>
+        <span class="footer__street">Na louce 252</span>
+        <span class="footer__town">Rejštejn, 30261</span><br>
+        <span class="footer__mail"><a href="mailto:kopretina@kopretina.cz">kopretina@kopretina.cz</a></span>
+        <span class="footer__phone">+420 712 345 678</span><br>
+        <p class="footer__copy">&copy; Šárka Boháčová, Czechitas</p>
+
+        <div class="divider divider--footer">
+        <img class="divider__img" src="/images/three_daisies_yellow.svg" alt="three daisies icon">
+        </div>
+
+    </footer>
+
+    <script src="/js/glide.min.js"></script>
+
+    <script>
+    new Glide('.glide', {
+        autoplay: 5000,
+        type: 'carousel',
+        animationDuration: 1000,
+    }).mount()
+    </script>
+
+    <script src="/js/fslightbox.js"></script>
+
+</body>
+</html>
