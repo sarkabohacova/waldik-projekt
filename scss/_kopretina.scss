@@ -39,6 +39,22 @@
 .table__item {
     padding: 10px;
     border-bottom: 1px solid root.$color-accent;
+    vertical-align: top;
+}
+
+.table__item {
+    text-align: left;
+}
+
+.table__time--last,
+.table__item--last {
+    border-bottom: none;
+}
+
+// Rhythm
+
+.rhythm {
+    text-align: left;
 }
 
 // Pictures

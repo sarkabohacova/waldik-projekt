@@ -19,7 +19,7 @@ body {
 h1, h2, h3 {
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
-  color: #52573d;
+  color: #426BAB;
 }
 
 h1 {
@@ -47,7 +47,7 @@ h2:before {
   content: "";
   width: 45%;
   height: 2px;
-  background-color: #DADECF;
+  background-color: #DB8AC7;
   left: -8%;
   bottom: -1%;
   position: absolute;
@@ -60,6 +60,10 @@ img {
 
 a {
   color: #553a41;
+}
+
+li {
+  margin: 10px 0 10px 0;
 }
 
 .infoboxes,
@@ -151,8 +155,8 @@ a {
   font-size: 2rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #eaa80b;
-  background-color: #f3eddf;
+  color: #DB8AC7;
+  background-color: #F9F1F7;
   margin: 0 0 10px 0;
   padding: 5px 10px;
   opacity: 0.8;
@@ -175,8 +179,8 @@ a {
   line-height: 1.25;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #52573d;
-  background-color: #f3eddf;
+  color: #426BAB;
+  background-color: #F9F1F7;
   text-transform: uppercase;
   padding: 5px 10px;
   opacity: 0.8;
@@ -189,21 +193,21 @@ a {
 
 .button {
   padding: 20px 20px;
-  background-color: #52573d;
+  background-color: #426BAB;
   border: none;
   font-weight: 600;
   color: white;
   border-radius: 30px;
   cursor: pointer;
-  box-shadow: 2px 3px 10px #c1c2bb;
+  box-shadow: 2px 3px 10px #C5CFD3;
   letter-spacing: 2px;
   margin: 20px;
 }
 
 .button:hover {
   background-color: white;
-  border: 2px solid #52573d;
-  color: #52573d;
+  border: 2px solid #426BAB;
+  color: #426BAB;
 }
 
 @media screen and (min-width: 960px) {
@@ -222,6 +226,7 @@ a {
   background-color: whitesmoke;
   padding-left: 40px;
   padding-right: 40px;
+  height: 15vh;
 }
 
 .header__logo {
@@ -236,7 +241,7 @@ a {
 .menu__toggler {
   cursor: pointer;
   text-transform: uppercase;
-  color: #52573d;
+  color: #426BAB;
   font-size: 1.5rem;
 }
 @media screen and (max-width: 500px) {
@@ -284,7 +289,7 @@ a {
 }
 
 .menu__item {
-  border-bottom: 1px solid #52573d;
+  border-bottom: 1px solid #426BAB;
   padding: 15px;
 }
 @media screen and (min-width: 1020px) {
@@ -296,7 +301,7 @@ a {
 .menu__link {
   display: block;
   text-decoration: none;
-  color: #52573d;
+  color: #262722;
 }
 @media screen and (min-width: 1020px) {
   .menu__link {
@@ -310,11 +315,11 @@ a {
 }
 
 .menu__link:hover {
-  color: #eaa80b;
+  color: #262722;
 }
 
 .menu__link:active {
-  color: #eaa80b;
+  color: #262722;
 }
 
 @media screen and (min-width: 1020px) {
@@ -327,7 +332,7 @@ a {
     width: 0%;
     content: ".";
     color: transparent;
-    background: #eaa80b;
+    background: #DB8AC7;
     height: 1px;
   }
   .menu__link:hover:after {
@@ -337,13 +342,13 @@ a {
     padding-bottom: 5px;
   }
   .menu__link:hover {
-    color: #52573d;
+    color: #262722;
   }
   .menu__link:active {
-    color: #52573d;
+    color: #262722;
   }
   .menu__item--active .menu__link {
-    border-bottom: 1px solid #eaa80b;
+    border-bottom: 1px solid #DB8AC7;
   }
 }
 .divider {
@@ -369,7 +374,7 @@ a {
 }
 
 .infobox {
-  background-color: #f3eddf;
+  background-color: #F9F1F7;
   border-radius: 5px;
   text-align: center;
   padding-bottom: 20px;
@@ -416,7 +421,7 @@ a {
 
 .reference__box {
   background-color: white;
-  border: 1px solid #eaa80b;
+  border: 1px solid #DB8AC7;
   padding: 15px;
   max-width: 70vh;
   text-align: center;
@@ -486,12 +491,12 @@ a {
 .footer {
   text-align: center;
   font-size: 14px;
-  background-color: #f3eddf;
+  background-color: #F9F1F7;
   padding: 60px;
 }
 
 .footer__title {
-  color: #52573d;
+  color: #426BAB;
 }
 
 .footer__street::after,
@@ -500,14 +505,14 @@ a {
 }
 
 .footer__copy {
-  color: #c1c2bb;
+  color: #C5CFD3;
   margin-top: 20px;
   font-size: 12px;
 }
 
 .fa-facebook-f,
 .fa-instagram {
-  color: #52573d;
+  color: #426BAB;
   text-decoration: none;
   font-size: 1.5em;
   padding: 10px;
@@ -574,11 +579,11 @@ a {
 .th,
 .td {
   padding: 10px;
-  border-bottom: 1px solid #eaa80b;
+  border-bottom: 1px solid #DB8AC7;
 }
 
 th {
-  background-color: #eaa80b;
+  background-color: #DB8AC7;
 }
 
 @media screen and (min-width: 960px) {
@@ -752,7 +757,7 @@ label {
 
 .form {
   border-radius: 5px;
-  background-color: #f3eddf;
+  background-color: #F9F1F7;
   padding: 20px;
   margin-top: 60px;
   margin-bottom: 60px;
@@ -816,7 +821,21 @@ label {
 .table__time,
 .table__item {
   padding: 10px;
-  border-bottom: 1px solid #eaa80b;
+  border-bottom: 1px solid #DB8AC7;
+  vertical-align: top;
+}
+
+.table__item {
+  text-align: left;
+}
+
+.table__time--last,
+.table__item--last {
+  border-bottom: none;
+}
+
+.rhythm {
+  text-align: left;
 }
 
 .box__img {
@@ -960,12 +979,12 @@ label {
 
 .news__meta {
   font-style: italic;
-  color: #c1c2bb;
+  color: #C5CFD3;
 }
 
 .fa-arrow-left-long {
   display: block;
-  color: #52573d;
+  color: #426BAB;
   text-decoration: none;
   font-size: 1.5em;
   padding: 10px;
@@ -1005,7 +1024,7 @@ label {
 
 .newslist__date {
   text-transform: uppercase;
-  color: #eaa80b;
+  color: #DB8AC7;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1018,7 +1037,7 @@ label {
 .newslist__item {
   display: grid;
   grid-template-columns: minmax(auto, 500px);
-  border-bottom: 1px solid #f3eddf;
+  border-bottom: 1px solid #F9F1F7;
   max-width: 500px;
   cursor: pointer;
   margin: 0 auto;
@@ -1033,7 +1052,7 @@ label {
 }
 
 .newslist__item:hover {
-  background-color: #f3eddf;
+  background-color: #F9F1F7;
 }
 
 .newslist__img {
