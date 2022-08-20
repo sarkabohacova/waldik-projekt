@@ -226,7 +226,7 @@ li {
   background-color: whitesmoke;
   padding-left: 40px;
   padding-right: 40px;
-  height: 15vh;
+  height: 18vh;
 }
 
 .header__logo {
@@ -275,7 +275,7 @@ li {
   position: absolute;
   right: 0;
   z-index: 2;
-  width: 30vh;
+  width: 60vh;
 }
 @media screen and (min-width: 1020px) {
   .menu__list {
