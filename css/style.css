@@ -685,6 +685,13 @@ th {
   }
 }
 
+.box__img--kontakt {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 70%;
+  height: 70%;
+}
+
 .daisybox--contact {
   margin-bottom: 60px;
 }
