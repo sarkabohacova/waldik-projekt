@@ -14,7 +14,9 @@
 }
 
 .footer__street::after,
-.footer__mail::after {
+.footer__mail::after, 
+.footer__one::after,
+.footer__two::after {
     content: " • ";
 }
 
