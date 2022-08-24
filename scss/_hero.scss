@@ -25,9 +25,9 @@
 .hero__title {
     display: inline-block;
     font-family: root.$font-special;
-	font-weight: 600;
+	font-weight: 800;
     font-size: 2rem;
-    letter-spacing: 1px;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
     color: root.$color-accent;
     background-color: root.$color-light;
@@ -36,7 +36,7 @@
     opacity: 0.8;
 
     @media screen and (min-width: 960px) {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 }
 
@@ -50,8 +50,8 @@
     margin: 0;
     font-size: 1.5rem;
     line-height: 1.25;
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
     color: root.$color-primary;
     background-color: root.$color-light;
     text-transform: uppercase;
@@ -59,6 +59,6 @@
     opacity: 0.8;
 
     @media screen and (min-width: 960px) {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }

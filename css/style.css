@@ -151,9 +151,9 @@ li {
 .hero__title {
   display: inline-block;
   font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 2rem;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
   color: #DB8AC7;
   background-color: #F9F1F7;
@@ -163,7 +163,7 @@ li {
 }
 @media screen and (min-width: 960px) {
   .hero__title {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -177,8 +177,8 @@ li {
   margin: 0;
   font-size: 1.5rem;
   line-height: 1.25;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   color: #426BAB;
   background-color: #F9F1F7;
   text-transform: uppercase;
@@ -187,7 +187,7 @@ li {
 }
 @media screen and (min-width: 960px) {
   .hero__motto {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -226,7 +226,12 @@ li {
   background-color: whitesmoke;
   padding-left: 40px;
   padding-right: 40px;
-  height: 18vh;
+  height: 80px;
+}
+@media screen and (min-width: 1020px) {
+  .header {
+    height: 100px;
+  }
 }
 
 .header__logo {
