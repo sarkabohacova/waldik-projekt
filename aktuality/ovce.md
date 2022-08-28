@@ -1,13 +1,13 @@
 ---
 layout: layouts/new.njk
-title: Nový páreček valašských ovcí
-date: 2021-09-13T14:16
-photo: sheep.jpg
-alt: Sheep
+title: Předběžný zápis do DS Waldík 
+date: 2022-08-26T14:16
+photo: zapis.jpg
+alt: Zápis
 tags: news
 ---
 
-V pátek 10. září jsme zahájili nový školní rok rozšířením našeho stáda ovcí o dva nové přírůstky z chovu pana Vejčíka z Horní Stropnice v Novohradských horách. Děti vybraly beránkovi jméno Falko a jeho sestře jméno Amidala. Díky tomu teď naše malé stádo čítá již 6 ovcí a věříme, že na jaře budeme schopni začít s tradičním zpracováním ovčí vlny, na což se všichni moc těšíme.
+Nyní je možné své děti předběžně zapsat do nově vznikající dětské skupiny Waldík skrze [listinu zájemců](https://docs.google.com/forms/d/1tnu8Zicb20KpcpqIYefYvFD9gMjT5peDmU2HbUoekBE/viewform?edit_requested=true). Těšíme se na vaše děti!
 
 
 
