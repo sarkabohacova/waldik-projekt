@@ -8,7 +8,7 @@ tags: news
 ---
 
 Srdečně Vás zveme na Dny otevřených dveří a **Zápis** do Dětské skupiny Waldík. 
-**Každé pondělí od 15 do 17h** v prostorách DS Waldík, ul. Na Bělidle od 15h do 18h. 
+**Každé pondělí od 16 do 17h** v prostorách DS Waldík, ul. Na Bělidle od 15h do 18h. 
 Ukážeme vám prostory dětské skupiny, povíme pár slov o koncepci vzdělávání v naší Dětské skupině. Těšíme se na Vás :-)
 
 
