@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "images/uploads"
+collections:
+  - name: "aktuality"
+    label: "Aktuality"
+    folder: "aktuality"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Šablona", name: "layout", widget: "hidden", default: "layouts/new.njk"}
+      - {label: "Tagy", name: "tags", widget: "hidden", default: "news"}
+      - {label: "Titulek", name: "title", widget: "string"}
+      - {label: "Datum", name: "date", widget: "datetime"}
+      - {label: "Obrázek", name: "photo", widget: "image", required: false }
+      - {label: "Text", name: "body", widget: "markdown"}
