@@ -2,7 +2,7 @@
 layout: layouts/new.njk
 title: DS Waldík - Místek
 date: 2025-04-04T14:16
-photo: mistek.jpg
+photo: mistek.jpeg
 alt: Místek
 tags: news
 ---
